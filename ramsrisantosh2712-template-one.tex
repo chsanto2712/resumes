@@ -1,17 +1,18 @@
 
     \documentclass[letterpaper,5pt]{article}
+
     \usepackage{latexsym}
     \usepackage[empty]{fullpage}
     \usepackage{titlesec}
     \usepackage{marvosym}
     \usepackage[usenames,dvipsnames]{color}
     \usepackage{verbatim}
-    \usepackage{enumitem}
+    \usepackage{enumitem} 
     \usepackage[hidelinks]{hyperref}
     \usepackage{fancyhdr}
     \usepackage[english]{babel}
     \usepackage{tabularx}
-    \usepackage{bookmark}
+    \usepackage{multicol}
     \RequirePackage{fontawesome}
     \input{glyphtounicode}
     \pagestyle{fancy}
@@ -19,80 +20,134 @@
     \fancyfoot{}
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0pt}
+
     \addtolength{\oddsidemargin}{-0.5in}
     \addtolength{\evensidemargin}{-0.5in}
     \addtolength{\textwidth}{1in}
     \addtolength{\topmargin}{-.5in}
     \addtolength{\textheight}{1.0in}
+
     \urlstyle{same}
+
     \raggedbottom
     \raggedright
     \setlength{\tabcolsep}{0in}
-    \setlength{\footskip}{5pt}
+
+
     \titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
     \pdfgentounicode=1
+
+
+
     \begin{document}
     
+
+    
     \begin{center}
-      \textbf{\Huge \scshape Santhosh} \\ \vspace{5pt}
-      \textbf{\large Hellogfhgjghfdg} \\ \vspace{2pt}
-      \href{mailto:dfhdsjfhj}{\raisebox{-0.05\height}\faEnvelope \ dfhdsjfhj} 
-      \ $|$ \ \href{tel:dsfsdfdsf}{\raisebox{-0.05\height}\faMobile \ dsfsdfdsf}  \
-       \
-      \ $|$ \ {\raisebox{-0.05\height}\faMapMarker \ dsfsdfsdf} \ \
-      %\href{https://linkedin.com/in/shivakumar19}{\raisebox{-0.05\height}\faLinkedin\ shivakumar19} \ $|$ \
-      %\href{https://github.com/GSK-10}{\raisebox{-0.05\height}\faGithub\ GSK-10} \ $|$ \ 
+        {\Huge \scshape First Last} \\ \vspace{1pt}
+        123 Street Name, Town, State 12345 \\ \vspace{1pt}
+        \small \raisebox{-0.1\height}\faPhone\ 123-456-7890 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{email@gmail.com}} ~ 
+        \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+        \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+        \vspace{-8pt}
     \end{center}
     
-      \section{Career Objective}
-        \begin{itemize}[leftmargin=0.15in, label={}]
-          \item{d}
-        \end{itemize}
+   \section{Education}
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item
+            \textbf{State University} \hfill Sep. 2017 -- May 2021 \\
+            Bachelor of Science in Computer Science \hfill City, State
+    \end{itemize}
     
-    \section{Education}
-      
-        \begin{itemize}[leftmargin=0.15in, label={}]
+    \vspace*{-7mm}
+    \section{Relevant Coursework}
+    \vspace*{-5mm}
+           \begin{multicols}{4}
+            \begin{itemize}[ itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}  
+    
+    \vspace*{-5mm}
+    \section{Experience}
+    \begin{itemize}[leftmargin=0in, label={}]
         \item[]
-            \textbf{Your College} \hfill Course Timeline \\
-            \textit{Type Of Study in Area Of Study} \hfill Your Scores
-        \end{itemize}
-      
-    %\vspace*{-10.5mm}
-      
+            \textbf{Electronics Company} \hfill May 2020 -- August 2020 \\
+            \textit{Software Engineer Intern} \hfill  City, State  
+            \vspace*{-2mm}
+            \begin{itemize}
+                \item[\textbullet] Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues. \vspace*{-1mm}
+                \item[\textbullet] Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed. \vspace*{-1mm}
+                \item[\textbullet] Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day. \vspace*{-1mm}
+                \item[\textbullet] Explored ways to visualize and send a daily report of test results to team members using HTML, JavaScript, and CSS. \vspace*{-1mm}
+            \end{itemize}
+        \item[]
+            \textbf{Startup, Inc} \hfill May 2019 -- August 2019 \\
+            \textit{Front End Developer Intern} \hfill City, State
+            \begin{itemize}
+                \item[\textbullet] Assisted in the development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.
+                \item[\textbullet] Worked with Google Firebase to manage user-inputted data across multiple platforms including web and mobile apps.
+                \item[\textbullet] Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.
+                \item[\textbullet] Utilized Android Studio as a development environment to visualize the application in both iOS and Android.
+            \end{itemize}
+    \end{itemize}
 
-    
-    \section{Technical Skills}
-    
-        \begin{itemize}[leftmargin=0.15in,label={}]
-        \item{
-          \textbf{Skill Title: }{\textbullet{} Your Skill \textbullet{} Your Skill \newline}
-        }
-        \end{itemize}
-        \vspace*{-6mm}  
-        
     
     \section{Projects}
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item[]
+            \textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console} \hfill January 2021
+            \begin{itemize}
+                \item[\textbullet] Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.
+                \item[\textbullet] Implemented Selenium to create an instance of Chrome to interact with the correct elements of the web page.
+                \item[\textbullet] Created a Linux virtual machine on Google Cloud to run the program daily from the cloud.
+                \item[\textbullet] Used Cron to schedule the program to execute automatically at 11 AM every morning for a gym reservation.
+            \end{itemize}
+            \vspace{-13pt}
+        \item[]
+            \textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio} \hfill November 2020
+            \begin{itemize}
+                \item[\textbullet] Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.
+                \item[\textbullet] Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.
+                \item[\textbullet] Utilized the layout editor to create a UI for the application to allow different scenes to interact with each other.
+            \end{itemize}
+            \vspace{-13pt}
+        \item[]
+            \textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX} \hfill October 2020
+            \begin{itemize}
+                \item[\textbullet] Designed a sample banking transaction system using Java to simulate common functions of using a bank account.
+                \item[\textbullet] Used JavaFX to create a GUI supporting actions such as creating an account, deposit, withdraw, list all accounts, etc.
+                \item[\textbullet] Implemented object-oriented programming practices such as inheritance to create different account types and databases.
+            \end{itemize}
+    \end{itemize}
+    \vspace{-15pt}
     
-        \begin{itemize}[leftmargin=0.15in,label={}]
-          \item{
-            \textbf{YOUR TITLE} $|$ \emph{YOUR TAGS}
-          }
-          \hfill FROM MONTH YEAR - TO MONTH YEAR
-          \begin{itemize} 
-            \item[\textbullet{}]\textbf{Your} Content Line - 1.
-            \item[\textbullet{}]\textbf{Your} Content Line - 2.
-          \end{itemize}
-          \end{itemize}
-
-        
-
-
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+            \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+            \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+        }}
+    \end{itemize}
+    \vspace{-16pt}
     
-      \ 
-    
-    
-    
-    
-    
-      \end{document}
-    
+    \section{Leadership / Extracurricular}
+    \begin{itemize}
+        \item[]
+            \textbf{Fraternity} \hfill Spring 2020 -- Present \\
+            \textit{President} \hfill University Name
+            \begin{itemize}
+                \item[\textbullet] Achieved a 4-star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).
+                \item[\textbullet] Managed an executive board of 5 members and conducted weekly meetings to oversee progress in essential parts of the chapter.
+                \item[\textbullet] Led a chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.
+            \end{itemize}
+    \end{itemize}
+    \end{document}
