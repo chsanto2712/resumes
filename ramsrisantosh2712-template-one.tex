@@ -29,7 +29,8 @@
     \addtolength{\topmargin}{-.5in}
     \addtolength{\textheight}{1.0in}
     \newcommand{\smalltextbullet}{\,\begin{picture}(-1,1)(-1,-3)\circle*{3}\end{picture}\ }
-    \usepackage{helvet}
+    
+ewcommand{phv}[1]{{ontfamily{phv}selectfont #1}}
 
    
 
@@ -51,7 +52,7 @@
   \begin{minipage}[b]{0.5\textwidth} 
   \vspace{-\baselineskip} 
   \textbf
-  { \fontsize{16}{20} \textcolor{black} {\textbf{\fontfamily{phv} \selectfont C S N V RAM SREE SANTHOSH}}} 
+  \phv{Hello}
   
   \vspace{6pt}
   
