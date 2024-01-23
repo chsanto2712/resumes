@@ -1,17 +1,20 @@
 
-    \documentclass[letterpaper,5pt]{article}
+    \documentclass[letterpaper,9pt]{article}
+
     \usepackage{latexsym}
     \usepackage[empty]{fullpage}
     \usepackage{titlesec}
     \usepackage{marvosym}
     \usepackage[usenames,dvipsnames]{color}
     \usepackage{verbatim}
-    \usepackage{enumitem}
+    \usepackage{enumitem} 
     \usepackage[hidelinks]{hyperref}
     \usepackage{fancyhdr}
     \usepackage[english]{babel}
     \usepackage{tabularx}
-    \usepackage{bookmark}
+    \usepackage{multicol}
+    \usepackage{lipsum}  
+    \setlength{\columnsep}{0mm}
     \RequirePackage{fontawesome}
     \input{glyphtounicode}
     \pagestyle{fancy}
@@ -19,74 +22,152 @@
     \fancyfoot{}
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0pt}
+
     \addtolength{\oddsidemargin}{-0.5in}
     \addtolength{\evensidemargin}{-0.5in}
     \addtolength{\textwidth}{1in}
     \addtolength{\topmargin}{-.5in}
     \addtolength{\textheight}{1.0in}
+
+   
+
     \urlstyle{same}
+
     \raggedbottom
     \raggedright
     \setlength{\tabcolsep}{0in}
-    \setlength{\footskip}{5pt}
+
+
     \titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
     \pdfgentounicode=1
+
+
+
     \begin{document}
-    
-    \begin{center}
-      \textbf{\Huge \scshape Santhosh} \\ \vspace{5pt}
-      
-      \href{mailto:mail@mail.com}{\raisebox{-0.05\height}\faEnvelope \ Your Mail} 
-       \
-       \
-       \
-    \end{center}
-    
-      
-    
-    \section{Education}
-      
-        \begin{itemize}[leftmargin=0.15in, label={}]
-        \item[]
-            \textbf{Your College} \hfill Course Timeline \\
-            \textit{Type Of Study in Area Of Study} \hfill Your Scores
-        \end{itemize}
-      
-      
 
     
-    \section{Technical Skills}
+    \begin{minipage}[t]{0.5\textwidth} 
+    \vspace{-\baselineskip} 
     
-        \begin{itemize}[leftmargin=0.15in,label={}]
-        \item{
-          \textbf{Skill Title: }{\textbullet{} Your Skill \textbullet{} Your Skill \newline}
-        }
-        \end{itemize}
-        \vspace*{-6mm}  
-        
+    { \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Your Name Here}}}} 
+    
+    \vspace{6pt}
+    
+    {\Large Developer \$\sim\$ Engineer}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.2\textwidth} 
+    \vspace{-\baselineskip} 
+    
+    \% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    \faLinkedin {\href{http://www.google.com}{portafolio.com}}\\ 
+    \faPhone 11 1111 11\\
+      \faGithub {City, Country}\
+    
+  \end{minipage}
+  \begin{minipage}[t]{0.27\textwidth} \% 27\% of the page width for the second row of icons
+    \vspace{-\baselineskip} \% Required for vertically aligning minipages
+    
+    \faEnvelope{\href{mailto:email@example.com}{email.email@example.com}}\	
+      \faGithub{\href{https://github.com/uma-dev}{github.com/uma-dev}}\
+      \faLinkedin{\href{https://www.linkedin.com}{/in/your-personal-url}}\    
+      
+  \end{minipage}
+  \vspace*{7mm}
+     
+    \begin{minipage}[t]{0.46\textwidth}
+    \section{\textbf{Summary}}
+      \textbf Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  \\
+    \end{minipage}
+    \hfill
+    
+    \begin{minipage}[t]{0.46\textwidth}
+    \section{\textbf{Skills}}
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+    Java, SQL, Python, JavaScript, HTML, C++, C.  
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+    GCP, Docker, Kubernetes, Spark, Hadoop, Hive.
+    \end{minipage}
+
+    \end{minipage}
     
     \section{Projects}
+    \begin{itemize}
+        \item[]
+       {Technology} 
+       \hspace*{28pt}
+        {\textbf{My project 1}} \hfill   github.com link
+        \newline
+        \hspace*{80pt}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, \\ \hspace*{80pt}
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        \item[]
+        {Technology} 
+        \hspace*{28pt}
+        {\textbf{My project 2}}  \hfill github.com link
+        \newline
+        \hspace*{80pt}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, \\   \hspace*{80pt}
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       \item[]
+       {Technology} 
+       \hspace*{28pt}
+       {\textbf{My project 3}}  \hfill github.com link
+       \newline
+       \hspace*{80pt}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, \\   \hspace*{80pt}
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      \item[]
+        {Technology} 
+        \hspace*{28pt}
+        {\textbf{My project 4}}  \hfill github.com link
+        \newline
+        \hspace*{80pt}
+        kiorem ipsum dolor sit amet, consectetur adipiscing elit, \\   \hspace*{80pt}
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \end{itemize}
     
-        \begin{itemize}[leftmargin=0.15in,label={}]
-          \item{
-            \textbf{YOUR TITLE} \$|\$ \emph{YOUR TAGS}
-          }
-          \hfill FROM MONTH YEAR - TO MONTH YEAR
-          \begin{itemize} 
-            \item[\textbullet{}]\textbf{Your} Content Line - 1.
-            \item[\textbullet{}]\textbf{Your} Content Line - 2.
-          \end{itemize}
-          \end{itemize}
-
-        
-
-
+    \vspace{-10 pt}
+\section{Education}
+\begin{itemize}
+    \item[]
+		{3/2023 - x/2023}
+    \hspace*{6pt}
+		{\textbf{Lorem ipsum dolor sit amet, consectetur adipiscing elit,}} \hfill 	School
+	\newline
+  \hspace*{80pt}
+		Enrolled, part-time program for development
+    \item[]
+		{x/2023 - x/2023}
+    \hspace*{6pt}
+		{\textbf{Professional Certificate}}  \hfill School
+		\newline
+    \hspace*{80pt}
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+	\item[]
+		{x/2023 - x/2023}
+    \hspace*{6pt}
+		{\textbf{Certificate}}  \hfill		School
+		\newline
+    \hspace*{80pt}
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+\end{itemize}
     
-      \ 
+    \vspace{-10 pt}
+	\section{Languages}
+    \hspace{26mm} \textbf{English} - B2+, \textbf{ Spanish} - native
     
-    
-    
-    
-    
-      \end{document}
+    \end{document}
     
