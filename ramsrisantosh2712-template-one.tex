@@ -30,8 +30,7 @@
     \addtolength{\topmargin}{-.5in}
     \addtolength{\textheight}{1.0in}
     \newcommand{\smalltextbullet}{\,\begin{picture}(-1,1)(-1,-3)\circle*{3}\end{picture}\ }
-    \DeclareTextFontCommand{\phvfont}{\fontfamily{phv}\selectfont}
-    
+    \newcommand{\phvfont}[1]{{\fontfamily{phv}\selectfont #1}}
    
 
     \urlstyle{same}
