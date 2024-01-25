@@ -1,36 +1,35 @@
 
-    \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
-    \usepackage{multicol}
-    \setlength{\columnsep}{0mm}
-    \usepackage{lipsum}  
-    \begin{document}
-    \cvsect{Projects}
-    \begin{entrylist}
-        \entry
-        {Technology}
-        {My project 1}
-        {github.com link}
-        {%Dummy text 
-            \lipsum[1][1-3]}
-        \entry
-        {Technology}
-        {My project 2}
-        {github.com link}
-        {%Dummy text 
-            \lipsum[1][1-3]}
-      \entry
-        {Technology}
-        {My project 3}
-        {github.com link}
-        {%Dummy text 
-            \lipsum[1][1-3]}
-        \entry
-        {Technology}
-        {My project 4}
-        {github.com link}
-        {%Dummy text 
-            \lipsum[1][1-3]}
-    \end{entrylist}
-    \end{document}
-
+      \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+      \usepackage{multicol}
+      \setlength{\columnsep}{0mm}
+      \usepackage{lipsum}  
+      \begin{document}
     
+    \begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Your Name Here}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Developer $\sim$ Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{11 1111 1111}\\
+    \icon{MapMarker}{11}{City, Country}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:email@example.com}{email.email@example.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/uma-dev}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com}{/in/your-personal-url}}\\    
+    
+\end{minipage}
+     \end{document}
