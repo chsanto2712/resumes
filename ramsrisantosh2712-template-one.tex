@@ -1,4 +1,159 @@
-\documentclass[5pt]{article}
-\begin{document}
-    Welcome to SBC Resume Builder
-\end{document}
+
+      \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+      \usepackage{multicol}
+      \setlength{\columnsep}{0mm}
+      \usepackage{lipsum}  
+      \begin{document}
+    
+    \begin{minipage}[t]{0.5\textwidth} 
+      \vspace{-\baselineskip}
+
+      { \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{SANTHOSH}}}}
+
+      \vspace{6pt}
+
+      {\Large }
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.2\textwidth}
+      \vspace{-\baselineskip}
+
+       \\ 
+      \icon{Phone}{11}{}\\
+      \icon{MapMarker}{11}{}\\
+
+      \end{minipage}
+      \begin{minipage}[t]{0.27\textwidth}
+      \vspace{-\baselineskip} 
+
+      \icon{Envelope}{11}{\href{}{}}\\	
+      \icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/uma-dev}}\\
+      \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com}{/in/your-personal-url}}\\    
+
+    \end{minipage}
+    
+    \begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+	\lipsum[1][1-5] \\
+\end{minipage}
+  \hfill
+    \begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Java, SQL, Python, JavaScript, HTML, C++, C.  
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      GCP, Docker, Kubernetes, Spark, Hadoop, Hive.
+    \end{minipage}
+    
+\end{minipage}
+    
+    \cvsect{Projects}
+    \begin{entrylist}
+        \entry
+        {Technology}
+        {My project 1}
+        {github.com link}
+        {%Dummy text 
+            \lipsum[1][1-3]}
+        \entry
+        {Technology}
+        {My project 2}
+        {github.com link}
+        {%Dummy text 
+            \lipsum[1][1-3]}
+      \entry
+        {Technology}
+        {My project 3}
+        {github.com link}
+        {%Dummy text 
+            \lipsum[1][1-3]}
+        \entry
+        {Technology}
+        {My project 4}
+        {github.com link}
+        {%Dummy text 
+            \lipsum[1][1-3]}
+    \end{entrylist}
+    
+    \vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{3/2023 - x/2023}
+		{\lipsum[1][1] }
+		{School}
+		{Enrolled, part time program for development}
+    \entry
+		{x/2023 - x/2023}
+		{Professional Certificate}
+		{School}
+		{\lipsum[1][1]}
+	\entry
+		{x/2023 - x/2023}
+		{Certificate}
+		{School}
+		{\lipsum[1][2]}
+	\entry
+		{x/2023 - x/2023}
+		{Engineer}
+		{School}
+		{\lipsum[1][2]}
+\end{entrylist}
+    
+    \vspace{-10 pt}
+    \cvsect{Experience}
+    \begin{entrylist}
+      \entry
+            {x/2023 -- x/2023}
+        {\lipsum[1][1]}
+        {Company}
+        {\vspace{-10pt}
+            \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                \item \lipsum[1][1-2]
+                \item \lipsum[1][3-4]
+            \end{itemize} 
+            \texttt{SQL} \slashsep \texttt{Excel}}
+      \entry
+        {x/2023 -- x/2023}
+        {\lipsum[1][1]}
+        {Company}
+        {\vspace{-10pt}
+            \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                \item \lipsum[1][1-2]
+                \item \lipsum[1][3-4]
+            \end{itemize} 
+            \texttt{SQL} \slashsep \texttt{Excel}}
+      \entry
+        {x/2023 -- x/2023 \\\footnotesize{scholarship holder}}
+        {\lipsum[1][1]}
+        {Company}
+        {\vspace{-10pt}
+            \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+                \item \lipsum[1][1-2]
+                \item \lipsum[1][3-4]
+            \end{itemize} 
+            \texttt{SQL} \slashsep \texttt{Excel}}
+    \end{entrylist}
+    
+    \vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - B2+, \textbf{ Spanish} - native
+    \end{document}
